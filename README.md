@@ -9,6 +9,10 @@
 - [Installation](#installation)
 - [Usage](#usage)
 
+## About
+
+`Class Merger` is a simple one-function library for creating multi inheritance classes, inspired by the ["real" class expression mixin method](https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/).
+
 ## Installation
 
 To install you can either use npm:
@@ -33,10 +37,6 @@ To include the file in node js use require:
 // There is no need to import anything but the mergeClasses function, since there is nothing.
 const { mergeClasses } = require("class-merger");
 ```
-
-## About
-
-`Class Merger` is a simple one-function library for creating multi inheritance classes, inspired by the ["real" class expression mixin method](https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/).
 
 ## Usage
 
