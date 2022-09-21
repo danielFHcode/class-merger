@@ -6,7 +6,7 @@
 ### Table of contents
 
 - [About](#about)
-- [Installation](#)
+- [Installation](#installation)
 - [Usage](#usage)
 
 ## Installation
