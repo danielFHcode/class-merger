@@ -1,0 +1,26 @@
+{
+  "name": "class-merger",
+  "version": "1.0.0",
+  "description": "A simple one function library for multy inheritance OOP.",
+  "main": "classMerger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielFHcode/class-merger.git"
+  },
+  "keywords": [
+    "[oop",
+    "javaScript",
+    "multi",
+    "inheritance",
+    "inheritance]"
+  ],
+  "author": "Daniel F.H.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielFHcode/class-merger/issues"
+  },
+  "homepage": "https://github.com/danielFHcode/class-merger#readme"
+}
