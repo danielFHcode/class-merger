@@ -27,7 +27,7 @@ To include the file in client side js use a script tag:
 
 ```html
 <body>
-  <script src=".../classMerger.js" defer></script>
+  <script src="/path/to/classMerger.js" defer></script>
 </body>
 ```
 
@@ -39,6 +39,8 @@ const { mergeClasses } = require("class-merger");
 ```
 
 ## Usage
+
+### Basic Usage
 
 As mentioned earlier, `Class Merger` is a one-function library - meaning it only consist of one function.
 
@@ -59,6 +61,8 @@ Expected result: A class named c with methods x, y & z.
 */
 ```
 
+### Using Super
+
 The specialty of using the [class expression based mixin method](https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/) is that you can use built in js inheritance options such as `super`:
 
 ```js
@@ -77,4 +81,36 @@ class c extends mergeClasses(a, b) {
 /*
 Expected result: A class named c with a working super object containing methods from classes a & b.
 */
+```
+
+### Extend Class After Creation
+
+It's also worth noting you can use this library for extending classes after you create them. You see, because `Class Merger` uses the [class expression based mixin method](https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/), when you write:
+
+```js
+class a{}
+class b{}
+class c{}
+mergeClasses(a,b,c)
+```
+
+What essentially happens is:
+
+```js
+class c{}
+class b extends c{}
+class a extends b{}
+// Note that classes b & c aren't actually modified, but rather newly created copies of them are.
+```
+
+So, you could use that to your advantage, and do something like this to extend classes after you created them:
+
+```js
+class a{}
+class b{}
+class c{}
+
+a = mergeClasses(
+  a, /* extends */ b, c
+)
 ```
