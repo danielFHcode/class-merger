@@ -1,3 +1,6 @@
+> [!WARNING]
+> This version of `class-merger` has been deprecated. The source code has been moved to https://github.com/danielFHcode/class-merger-2
+
 # Class Merger
 
 [![License](https://img.shields.io/badge/license-ISC-blue.svg)](https://github.com/probot/template/blob/master/LICENSE)
